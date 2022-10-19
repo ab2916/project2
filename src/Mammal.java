@@ -1,17 +1,17 @@
 public class Mammal extends Animals{
-    protected int milkKal;
+    protected double milkKal;
     protected int pregMonth;
 
     public Mammal() {
     }
 
-    public Mammal(String name, double age, boolean torefAl, int kaloriot, int milkKal, int pregMonth) {
+    public Mammal(String name, double age, boolean torefAl, double kaloriot, double milkKal, int pregMonth) {
         super(name, age, torefAl, kaloriot);
         this.milkKal = milkKal;
         this.pregMonth = pregMonth;
     }
 
-    public void setMilkKal(int milkKal) {
+    public void setMilkKal(double milkKal) {
         this.milkKal = milkKal;
     }
 
@@ -19,7 +19,7 @@ public class Mammal extends Animals{
         this.pregMonth = pregMonth;
     }
 
-    public int getMilkKal() {
+    public double getMilkKal() {
         return milkKal;
     }
 
@@ -30,5 +30,10 @@ public class Mammal extends Animals{
     @Override
     public String toString() {
         return "Mammal(" + "milkKal:" + milkKal + ",pregMonth:" + pregMonth + ")";
+    }
+
+    public double Eat()
+    {
+        return super.Eat() + this.milkKal;
     }
 }

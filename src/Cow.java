@@ -4,7 +4,7 @@ public class Cow extends Mammal{
     public Cow() {
     }
 
-    public Cow(String name, double age, boolean torefAl, int kaloriot, int milkKal, int pregMonth, int numOfHamlatot) {
+    public Cow(String name, double age, boolean torefAl, double kaloriot, double milkKal, int pregMonth, int numOfHamlatot) {
         super(name, age, torefAl, kaloriot, milkKal, pregMonth);
         this.numOfHamlatot = numOfHamlatot;
     }
@@ -20,5 +20,10 @@ public class Cow extends Mammal{
     @Override
     public String toString() {
         return "Cow(" + "numOfHamlatot:" + numOfHamlatot + ")";
+    }
+
+    public double Eat()
+    {
+        return super.Eat() / 4;
     }
 }

@@ -4,7 +4,7 @@ public class parrot extends Bird{
     public parrot() {
     }
 
-    public parrot(String name, double age, boolean torefAl, int kaloriot, double flightHigh, double wingsLength, boolean talk) {
+    public parrot(String name, double age, boolean torefAl, double kaloriot, double flightHigh, double wingsLength, boolean talk) {
         super(name, age, torefAl, kaloriot, flightHigh, wingsLength);
         this.talk = talk;
     }

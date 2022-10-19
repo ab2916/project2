@@ -5,7 +5,7 @@ public class Bird extends Animals{
     public Bird() {
     }
 
-    public Bird(String name, double age, boolean torefAl, int kaloriot, double flightHigh, double wingsLength) {
+    public Bird(String name, double age, boolean torefAl, double kaloriot, double flightHigh, double wingsLength) {
         super(name, age, torefAl, kaloriot);
         this.flightHigh = flightHigh;
         this.wingsLength = wingsLength;
@@ -30,5 +30,20 @@ public class Bird extends Animals{
     @Override
     public String toString() {
         return "Bird(" + "flightHigh:" + flightHigh + ",wingsLength:" + wingsLength + ")";
+    }
+
+    public double Eat()
+    {
+        return super.Eat() / 4.5;
+    }
+
+    public void Sing()
+    {
+        System.out.println("Tzif Tzif");
+    }
+
+    public void Dance()
+    {
+        System.out.println("Dancing in the nest!");
     }
 }

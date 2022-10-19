@@ -4,7 +4,7 @@ public class Snake extends Reptile{
     public Snake() {
     }
 
-    public Snake(String name, double age, boolean torefAl, int kaloriot, double tailLength, boolean arsi) {
+    public Snake(String name, double age, boolean torefAl, double kaloriot, double tailLength, boolean arsi) {
         super(name, age, torefAl, kaloriot, tailLength);
         this.arsi = arsi;
     }
@@ -20,5 +20,10 @@ public class Snake extends Reptile{
     @Override
     public String toString() {
         return "Snake(" + "arsi:" + arsi + ")";
+    }
+
+    public void Dance()
+    {
+        System.out.println("Crawling dance!");
     }
 }

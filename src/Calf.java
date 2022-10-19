@@ -4,7 +4,7 @@ public class Calf extends Cow{
     public Calf() {
     }
 
-    public Calf(String name, double age, boolean torefAl, int kaloriot, int milkKal, int pregMonth, int numOfHamlatot, double weight) {
+    public Calf(String name, double age, boolean torefAl, double kaloriot, double milkKal, int pregMonth, int numOfHamlatot, double weight) {
         super(name, age, torefAl, kaloriot, milkKal, pregMonth, numOfHamlatot);
         this.weight = weight;
     }

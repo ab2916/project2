@@ -4,7 +4,7 @@ public class Reptile extends Animals{
     public Reptile() {
     }
 
-    public Reptile(String name, double age, boolean torefAl, int kaloriot, double tailLength) {
+    public Reptile(String name, double age, boolean torefAl, double kaloriot, double tailLength) {
         super(name, age, torefAl, kaloriot);
         this.tailLength = tailLength;
     }

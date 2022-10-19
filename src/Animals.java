@@ -2,12 +2,12 @@ public class Animals {
     protected String name;
     protected double age;
     protected boolean torefAl;
-    protected int kaloriot;
+    protected double kaloriot;
 
     public Animals() {
     }
 
-    public Animals(String name, double age, boolean torefAl, int kaloriot) {
+    public Animals(String name, double age, boolean torefAl, double kaloriot) {
         this.name = name;
         this.age = age;
         this.torefAl = torefAl;
@@ -26,7 +26,7 @@ public class Animals {
         this.torefAl = torefAl;
     }
 
-    public void setKaloriot(int kaloriot) {
+    public void setKaloriot(double kaloriot) {
         this.kaloriot = kaloriot;
     }
 
@@ -42,12 +42,17 @@ public class Animals {
         return torefAl;
     }
 
-    public int getKaloriot() {
+    public double getKaloriot() {
         return kaloriot;
     }
 
     public String toString()
     {
         return "Animal(" + "Name:" + this.name + ",Age:" + this.age + ",TorefAl:" + this.torefAl + ",kaloriot:" + this.kaloriot + ")";
+    }
+
+    public double Eat()
+    {
+        return (this.kaloriot * 3);
     }
 }

@@ -4,7 +4,7 @@ public class Crocodile extends Reptile{
     public Crocodile() {
     }
 
-    public Crocodile(String name, double age, boolean torefAl, int kaloriot, double tailLength, boolean passTeethTest) {
+    public Crocodile(String name, double age, boolean torefAl, double kaloriot, double tailLength, boolean passTeethTest) {
         super(name, age, torefAl, kaloriot, tailLength);
         this.passTeethTest = passTeethTest;
     }
@@ -20,5 +20,10 @@ public class Crocodile extends Reptile{
     @Override
     public String toString() {
         return "Crocodile(" + "passTeethTest:" + passTeethTest + ")";
+    }
+
+    public double Eat()
+    {
+        return super.Eat() / 5;
     }
 }
